@@ -29,7 +29,7 @@ class ModWowRaidProgressLegionHelper extends WoWModuleAbstract
                 ),
                 // Il'gynoth
                 105393 => array(
-                    'link' => 'zone/the-emerald-nightmare/ilgynoth',
+                    'link' => 'zone/the-emerald-nightmare/ilgynoth-the-heart-of-corruption',
                     'normal' => 0,
                     'heroic' => 0,
                     'mythic' => 10823
