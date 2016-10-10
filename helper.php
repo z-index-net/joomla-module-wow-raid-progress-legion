@@ -20,6 +20,27 @@ class ModWowRaidProgressLegionHelper extends WoWModuleAbstract
             'link' => 'zone/the-emerald-nightmare/',
             'stats' => array('kills' => 0, 'mode' => 'normal'),
             'npcs' => array(
+                // Nythendra
+                102672 => array(
+                    'link' => 'zone/the-emerald-nightmare/nythendra',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10821
+                ),
+                // Il'gynoth
+                105393 => array(
+                    'link' => 'zone/the-emerald-nightmare/ilgynoth',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10823
+                ),
+                // Elerethe Renferal
+                106087 => array(
+                    'link' => 'zone/the-emerald-nightmare/elerethe-renferal',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10822
+                ),
                 // Ursoc
                 26633 => array(
                     'link' => 'zone/the-emerald-nightmare/ursoc',
@@ -27,7 +48,27 @@ class ModWowRaidProgressLegionHelper extends WoWModuleAbstract
                     'heroic' => 0,
                     'mythic' => 0
                 ),
-                // TODO add all Encounters
+                // Dragons of Nightmare
+                39407 => array(
+                    'link' => 'zone/the-emerald-nightmare/dragons-of-nightmare',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10825
+                ),
+                // Cenarius
+                113534 => array(
+                    'link' => 'zone/the-emerald-nightmare/cenarius',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10826
+                ),
+                // Xavius
+                102206 => array(
+                    'link' => 'zone/the-emerald-nightmare/xavius',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10827
+                ),
             ),
         ),
     );
@@ -241,60 +282,5 @@ class ModWowRaidProgressLegionHelper extends WoWModuleAbstract
         }
 
         return $sites[$this->params->global->get('link')];
-    }
-
-    /**
-     * @todo remove on release!
-     */
-    private function generateINI()
-    {
-        header("Content-type: text/plain; charset=utf-8");
-
-        foreach ($this->raids as $zoneId => &$zone) {
-
-            echo strtoupper(__CLASS__) . '_ZONE_' . $zoneId . ' = ""' . PHP_EOL;
-
-            foreach ($zone['npcs'] as $npcId => &$npc) {
-                echo strtoupper(__CLASS__) . '_NPC_' . $npcId . ' = ""' . PHP_EOL;
-            }
-
-            echo PHP_EOL;
-        }
-
-        exit;
-    }
-
-    /**
-     * @todo remove on release!
-     */
-    private function generateXML()
-    {
-        header("Content-type: text/xml; charset=utf-8");
-
-        $xml = new SimpleXMLElement('<fieldset />');
-        $xml->addAttribute('name', 'adjustments');
-
-        $options = array('auto', 'no', 'normal', 'heroic');
-
-        foreach ($this->raids as $zoneId => &$zone) {
-            $spacer = $xml->addChild('field');
-            $spacer->addAttribute('type', 'spacer');
-            $spacer->addAttribute('class', 'label');
-            $spacer->addAttribute('label', strtoupper(__CLASS__) . '_ZONE_' . $zoneId);
-            foreach ($zone['npcs'] as $npcId => &$npc) {
-                $adjust = $xml->addChild('field');
-                $adjust->addAttribute('name', 'adjust_' . $npcId);
-                $adjust->addAttribute('default', 'auto');
-                $adjust->addAttribute('type', 'radio');
-                $adjust->addAttribute('class', 'btn-group');
-                $adjust->addAttribute('label', strtoupper(__CLASS__) . '_NPC_' . $npcId);
-                foreach ($options as $option) {
-                    $child = $adjust->addChild('option', strtoupper(__CLASS__ . '_RAID_' . $option));
-                    $child->addAttribute('value', $option);
-                }
-            }
-        }
-
-        exit($xml->asXML());
     }
 }
