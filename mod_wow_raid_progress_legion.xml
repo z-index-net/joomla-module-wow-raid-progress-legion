@@ -32,14 +32,10 @@
     <config>
         <fields name="params" addfieldpath="/plugins/system/wow/fields/">
             <fieldset name="basic">
-                <field name="collapsed" type="list" default="8005" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_DESC">
-                    <option value="8005">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8005</option>
-                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8025</option>
+                <field name="collapsed" type="list" default="8026" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_DESC">
                     <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8026</option>
                 </field>
                 <field name="hide" type="list" default="" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_HIDE_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_HIDE_DESC">
-                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8005</option>
-                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8025</option>
                     <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8026</option>
                 </field>
                 <field name="mode" type="radio" class="btn-group" default="manual" required="true" label="MOD_WOW_RAID_PROGRESS_LEGION_MODE_LABEL">
