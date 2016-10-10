@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+    <name>MOD_WOW_RAID_PROGRESS_LEGION</name>
+    <author>Branko Wilhelm</author>
+    <creationDate>Okt 2016</creationDate>
+    <copyright>(c) 2016 Branko Wilhelm</copyright>
+    <license>GNU/GPLv3 http://www.gnu.org/licenses/gpl-3.0.html</license>
+    <authorEmail>branko.wilhelm@gmail.com</authorEmail>
+    <authorUrl>www.z-index.net</authorUrl>
+    <version>@REVISION@</version>
+    <description>MOD_WOW_RAID_PROGRESS_LEGION_DESC</description>
+    <files>
+        <filename module="mod_wow_raid_progress_legion">mod_wow_raid_progress_legion.php</filename>
+        <filename>helper.php</filename>
+        <folder>tmpl</folder>
+    </files>
+    <scriptfile>script.installer.php</scriptfile>
+    <languages folder="language">
+        <language tag="en-GB">en-GB/en-GB.mod_wow_raid_progress_legion.ini</language>
+        <language tag="en-GB">en-GB/en-GB.mod_wow_raid_progress_legion.sys.ini</language>
+        <language tag="de-DE">de-DE/de-DE.mod_wow_raid_progress_legion.ini</language>
+        <language tag="de-DE">de-DE/de-DE.mod_wow_raid_progress_legion.sys.ini</language>
+    </languages>
+    <updateservers>
+        <server type="collection" priority="1" name="z-index development">http://www.z-index.net/en/extensions.xml</server>
+    </updateservers>
+    <media folder="media" destination="mod_wow_raid_progress_legion">
+        <folder>css</folder>
+        <folder>images</folder>
+        <folder>js</folder>
+    </media>
+    <config>
+        <fields name="params" addfieldpath="/plugins/system/wow/fields/">
+            <fieldset name="basic">
+                <field name="collapsed" type="list" default="8005" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_DESC">
+                    <option value="8005">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8005</option>
+                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8025</option>
+                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8026</option>
+                </field>
+                <field name="hide" type="list" default="" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_HIDE_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_HIDE_DESC">
+                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8005</option>
+                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8025</option>
+                    <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8026</option>
+                </field>
+                <field name="mode" type="radio" class="btn-group" default="manual" required="true" label="MOD_WOW_RAID_PROGRESS_LEGION_MODE_LABEL">
+                    <option value="manual">MOD_WOW_RAID_PROGRESS_LEGION_MODE_MANUAL</option>
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_MODE_AUTO</option>
+                </field>
+                <field name="difficulty" type="list" multiple="true" class="btn-group" default="normal" label="MOD_WOW_RAID_PROGRESS_LEGION_DIFFICULTY_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_DIFFICULTY_DESC">
+                    <option value="normal" disabled="true">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="ranks" type="integer" first="0" last="10" step="1" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_RANKS_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_RANKS_DESC" />
+                <field name="successful" type="integer" first="5" last="25" step="1" default="5" label="MOD_WOW_RAID_PROGRESS_LEGION_SUCCESSFUL_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_SUCCESSFUL_DESC" />
+                <field name="ajax" type="ajax" class="btn-group" label="Ajax" default="0" />
+            </fieldset>
+            <fieldset name="adjustments" label="MOD_WOW_RAID_PROGRESS_LEGION_ADJUSTMENT_LABEL">
+                <field type="spacer" class="label" label="MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8026" />
+                <field name="adjust_26633" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_26633">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <!-- TODO add missing encounters -->
+                <field type="spacer" class="label" label="MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8005" />
+            </fieldset>
+            <fieldset name="advanced">
+                <field name="layout" type="modulelayout" label="JFIELD_ALT_LAYOUT_LABEL" description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+                <field name="moduleclass_sfx" type="text" label="COM_MODULES_FIELD_MODULECLASS_SFX_LABEL" description="COM_MODULES_FIELD_MODULECLASS_SFX_DESC" />
+            </fieldset>
+        </fields>
+    </config>
+</extension>

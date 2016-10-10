@@ -1,0 +1,88 @@
+.mod_wow_raid_progress_legion {
+    max-width: 280px;
+}
+
+.mod_wow_raid_progress_legion ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.mod_wow_raid_progress_legion li {
+    margin: 0;
+    padding: 0;
+}
+
+.mod_wow_raid_progress_legion .npcs {
+    display: none;
+}
+
+.mod_wow_raid_progress_legion .npc {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 0 0 0 3px;
+}
+
+.mod_wow_raid_progress_legion .npc:last-child {
+    border-bottom: none;
+}
+
+.mod_wow_raid_progress_legion .npcs.open {
+    display: block;
+}
+
+.mod_wow_raid_progress_legion .header {
+    position: relative;
+    margin-top: 5px;
+    height: 35px;
+    padding-top: 15px;
+    cursor: pointer;
+}
+
+.mod_wow_raid_progress_legion .header,
+.mod_wow_raid_progress_legion a {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 1);
+    font-weight: bolder;
+    padding-left: 3px;
+}
+
+.mod_wow_raid_progress_legion .header .p {
+    position: absolute;
+    display: block;
+    height: 5px;
+    background: forestgreen;
+    top: 0;
+    left: 0;
+}
+
+.mod_wow_raid_progress_legion .header .k {
+    float: right;
+    padding: 3px;
+}
+
+.mod_wow_raid_progress_legion .normal,
+.mod_wow_raid_progress_legion .heroic,
+.mod_wow_raid_progress_legion .mythic {
+    display: inline-block;
+    float: right;
+    width: 18px;
+    height: 18px;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.mod_wow_raid_progress_legion .normal {
+    background-image: url('../images/normal.png');
+}
+
+.mod_wow_raid_progress_legion .heroic {
+    background-image: url('../images/heroic.png');
+}
+
+.mod_wow_raid_progress_legion .mythic {
+    background-image: url('../images/mythic.png');
+}
+
+.mod_wow_raid_progress_legion .z8026 {
+    background: url('../images/z8026.jpg') no-repeat top center;
+}
