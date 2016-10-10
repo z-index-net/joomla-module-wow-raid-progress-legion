@@ -58,42 +58,49 @@
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
                     <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
                 <field name="adjust_105393" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_105393">
                     <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
                     <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
                 <field name="adjust_106087" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_106087">
                     <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
                     <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
                 <field name="adjust_26633" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_26633">
                     <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
                     <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
                 <field name="adjust_39407" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_39407">
                     <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
                     <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
                 <field name="adjust_113534" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_113534">
                     <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
                     <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
                 <field name="adjust_102206" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_102206">
                     <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
                     <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
             </fieldset>
             <fieldset name="advanced">
