@@ -15,7 +15,7 @@ class mod_wow_raid_progress_legionInstallerScript
     {
         if (!class_exists('WoW')) {
             $link = JHtml::_('link', 'http://www.z-index.net', 'z-index.net', array('target' => '_blank'));
-            JFactory::getApplication()->enqueueMessage(sprintf('You need the latest Joomla WoW configuration Extension from ', $link), 'error');
+            JFactory::getApplication()->enqueueMessage(sprintf('You need the latest Joomla WoW configuration Extension from %s', $link), 'error');
             return false;
         }
         return true;
