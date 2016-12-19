@@ -71,6 +71,111 @@ class ModWowRaidProgressLegionHelper extends WoWModuleAbstract
                 ),
             ),
         ),
+        // Trial of Valor
+        8440 => array(
+            'link' => 'zone/trial-of-valor/',
+            'stats' => array('kills' => 0, 'mode' => 'normal'),
+            'npcs' => array(
+                // Odyn
+                114263 => array(
+                    'link' => 'zone/trial-of-valor/odyn',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 11396
+                ),
+                // Helya
+                96759 => array(
+                    'link' => 'zone/trial-of-valor/helya',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 11398
+                ),
+                // Guarm
+                114344 => array(
+                    'link' => 'zone/trial-of-valor/guarm',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 11397
+                ),
+            ),
+        ),
+        // The Nighthold
+        8025 => array(
+            'link' => 'zone/the-nighthold/',
+            'stats' => array('kills' => 0, 'mode' => 'normal'),
+            'npcs' => array(
+                // Skorpyron
+                102263 => array(
+                    'link' => 'zone/the-nighthold/skorpyron',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10840
+                ),
+                // Krosus
+                101002 => array(
+                    'link' => 'zone/the-nighthold/krosus',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10848
+                ),
+                // Chronomatic Anomaly
+                104415 => array(
+                    'link' => 'zone/the-nighthold/chronomatic-anomaly',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10842
+                ),
+                // Trilliax
+                104288 => array(
+                    'link' => 'zone/the-nighthold/trilliax',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10843
+                ),
+                // Star Augur Etraeus
+                103758 => array(
+                    'link' => 'zone/the-nighthold/star-augur-etraeus',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10845
+                ),
+                // Gul'dan
+                105503 => array(
+                    'link' => 'zone/the-nighthold/guldan',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10850
+                ),
+                // Grand Magistrix Elisande
+                110965 => array(
+                    'link' => 'zone/the-nighthold/grand-magistrix-elisande',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10849
+                ),
+                // Spellblade Aluriel
+                107699 => array(
+                    'link' => 'zone/the-nighthold/spellblade-aluriel',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10844
+                ),
+                // High Botanist Tel'arn
+                104528 => array(
+                    'link' => 'zone/the-nighthold/high-botanist-telarn',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10846
+                ),
+                // Tichondrius
+                103685 => array(
+                    'link' => 'zone/the-nighthold/tichondrius',
+                    'normal' => 0,
+                    'heroic' => 0,
+                    'mythic' => 10847
+                ),
+            ),
+        ),
     );
 
     /**

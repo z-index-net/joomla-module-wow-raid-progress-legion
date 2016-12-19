@@ -34,9 +34,13 @@
             <fieldset name="basic">
                 <field name="collapsed" type="list" default="8026" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_COLLAPSED_DESC">
                     <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8026</option>
+                    <option value="8440">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8440</option>
+                    <option value="8025">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8025</option>
                 </field>
                 <field name="hide" type="list" default="" multiple="true" label="MOD_WOW_RAID_PROGRESS_LEGION_HIDE_LABEL" description="MOD_WOW_RAID_PROGRESS_LEGION_HIDE_DESC">
                     <option value="8026">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8026</option>
+                    <option value="8440">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8440</option>
+                    <option value="8025">MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8025</option>
                 </field>
                 <field name="mode" type="radio" class="btn-group" default="manual" required="true" label="MOD_WOW_RAID_PROGRESS_LEGION_MODE_LABEL">
                     <option value="manual">MOD_WOW_RAID_PROGRESS_LEGION_MODE_MANUAL</option>
@@ -96,6 +100,99 @@
                     <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
                 </field>
                 <field name="adjust_102206" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_102206">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field type="spacer" class="label" label="MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8440" />
+                <field name="adjust_114263" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_114263">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_96759" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_96759">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_114344" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_114344">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field type="spacer" class="label" label="MOD_WOW_RAID_PROGRESS_LEGION_ZONE_8025" />
+                <field name="adjust_102263" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_102263">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_101002" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_101002">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_104415" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_104415">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_104288" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_104288">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_103758" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_103758">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_105503" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_105503">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_110965" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_110965">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_107699" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_107699">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_104528" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_104528">
+                    <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
+                    <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
+                    <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
+                    <option value="heroic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_HEROIC</option>
+                    <option value="mythic">MOD_WOW_RAID_PROGRESS_LEGION_RAID_MYTHIC</option>
+                </field>
+                <field name="adjust_103685" default="auto" type="radio" class="btn-group" label="MOD_WOW_RAID_PROGRESS_LEGION_NPC_103685">
                     <option value="auto">MOD_WOW_RAID_PROGRESS_LEGION_RAID_AUTO</option>
                     <option value="no">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NO</option>
                     <option value="normal">MOD_WOW_RAID_PROGRESS_LEGION_RAID_NORMAL</option>
