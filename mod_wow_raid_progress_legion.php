@@ -17,7 +17,7 @@ if (!class_exists('WoWModuleAbstract')) {
     return;
 }
 
-JLoader::register('ModWowRaidProgressLegionHelper', dirname(__FILE__) . '/helper.php');
+JLoader::register('ModWowRaidProgressLegionHelper', __DIR__ . '/helper.php');
 
 $raids = ModWowRaidProgressLegionHelper::getData($params);
 
